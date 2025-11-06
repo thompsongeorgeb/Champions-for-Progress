@@ -1,0 +1,97 @@
+# WordPress Core Files
+# Don't commit wp-config.php as it contains sensitive database credentials
+wp-config.php
+
+# Don't commit database backups
+*.sql
+*.sql.gz
+
+# Don't commit log files
+*.log
+error_log
+debug.log
+
+# Don't commit cache files
+wp-content/cache/
+wp-content/advanced-cache.php
+wp-content/object-cache.php
+
+# Don't commit backup files
+wp-content/backup-db/
+wp-content/backups/
+wp-content/updraft/
+*.bak
+
+# Plugin and theme files that will be installed separately
+# (Keep custom theme but ignore purchased plugins)
+wp-content/plugins/paid-memberships-pro/
+wp-content/plugins/geodirectory/
+wp-content/plugins/wp-job-manager/
+wp-content/plugins/wordfence/
+wp-content/plugins/updraftplus/
+wp-content/plugins/wp-mail-smtp/
+
+# Keep custom plugins (if you create any)
+!wp-content/plugins/champions-custom-functions/
+
+# Uploaded files (these can be large)
+wp-content/uploads/
+
+# Keep a sample uploads directory structure
+!wp-content/uploads/.gitkeep
+
+# Ignore purchased themes
+wp-content/themes/astra-pro/
+wp-content/themes/astra/
+
+# Keep your custom theme
+!wp-content/themes/champions-for-progress/
+
+# System files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+*.swp
+*~
+
+# IDE files
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# Node modules (if using any build tools)
+node_modules/
+npm-debug.log
+yarn-error.log
+
+# Composer
+/vendor/
+composer.phar
+composer.lock
+
+# Environment files
+.env
+.env.local
+.env.*.local
+
+# WP-CLI
+wp-cli.local.yml
+
+# Htaccess (may contain server-specific rules)
+.htaccess
+
+# Temporary files
+tmp/
+temp/
+*.tmp
+
+# Keep important documentation
+!README.md
+!SETUP.md
+!PLUGINS.md
+!LICENSE
